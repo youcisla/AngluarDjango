@@ -6,7 +6,8 @@
 }
 
 * {
-    font-family: cursive;
+	font-family: 'Your Desired Font', sans-serif;
+	font-size: 20px;
 }
 
 .row {
