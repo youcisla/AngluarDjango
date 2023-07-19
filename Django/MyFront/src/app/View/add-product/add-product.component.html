@@ -1,0 +1,20 @@
+<head>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
+        crossorigin="anonymous"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+</head>
+
+<body>
+    <div class="container">
+        <select [(ngModel)]="Year" class="dropdown" name="Year" id="car-years" placeholder="Year"></select>
+        <select [(ngModel)]="Make" class="dropdown" name="Make" id="car-makes"></select>
+        <select [(ngModel)]="Model" class="dropdown" name="Model" id="car-models"></select>
+        <select [(ngModel)]="Trim" class="dropdown" name="Trim" id="car-model-trims"></select>
+        <input [(ngModel)]="price" name="price" lass="text-box4" type="text" placeholder="Price">
+        <button (click)="Add()" type="button" class="btn btn-primary" id="addP">Add</button>
+        <input id="cq-show-data" type="button" value="Show Data" />
+        <div id="car-model-data"></div>
+    </div>
+</body>
